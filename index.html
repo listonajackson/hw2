@@ -2,7 +2,7 @@
 <html>
     <head>
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
-        <h1 class="m-4 text-3xl font-bold text-center text-red-500">Welcome to Liston's Pizza!</h1>
+        <h1 class="m-4 text-3xl border-2 rounded-md font-bold text-center text-red-500">Welcome to Liston's Pizza!</h1>
     </head>
     <body>  
         <p class="m-4 text-2xl text-green-800">Remember folks, <em>Real Chicagoans don't eat deep dish!</em></p>
@@ -11,8 +11,20 @@
             </div>
             <div class="m-4 font-bold">
                 <p> <em>Ready to Order?</p>
-                <p>Start with  <a href="products.html">Products Page</a> to see what we have available today</p>
+                <p>Start with our  <a href="products.html">Products Page</a> to see what we have available today</p>
                 <p>Then choose from our many <a href="ingredients.html"> Ingredients</a> to finalize you order</p>
             </div>
-        </body>
+        <form netlify>
+            <label class="block mx-4 font-bold text-blue-800" for="name">Name</label>
+            <input class="p-2 w-64 mx-4 border border-gray-400 rounded shadow-xl" type="text" id="name" name="name">
+
+            <label class="block mx-4 font-bold text-blue-800" for="Address">Address</label>
+            <input class="p-2 w-64 mx-4 border border-gray-400 rounded shadow-xl" type="text" id="address" name="address">
+
+            <label class="block mx-4 font-bold text-blue-800" for="Order">Order</label>
+            <input class="p-2 w-64 mx-4 border border-gray-400 rounded shadow-xl" type="text" id="order" name="order">
+
+            <button class="block my-4 mx-4 py-4 font-bold text-white bg-blue-800 rounded px-4 py-2">Submit Your Order</button>
+        </form>    
+    </body>
 </html>
